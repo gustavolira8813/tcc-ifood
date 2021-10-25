@@ -1,0 +1,13 @@
+.imgResume {
+  width: 80%;
+  max-width: 900px;
+  min-width: 350px;
+}
+.imgLocal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.resume {
+  text-align: center;
+}

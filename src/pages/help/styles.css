@@ -1,0 +1,13 @@
+.help h1 {
+  color: #777;
+  margin: 0;
+  font-size: 12em;
+  text-align: center;
+}
+.help img {
+  width: 50vw;
+  height: 50vh;
+}
+.help {
+  text-align: center;
+}

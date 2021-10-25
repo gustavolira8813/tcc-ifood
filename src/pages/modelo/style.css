@@ -1,0 +1,11 @@
+.imgModels {
+  width: 90%;
+  max-width: 900px;
+  min-width: 350px;
+}
+.models {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
