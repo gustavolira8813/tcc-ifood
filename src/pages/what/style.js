@@ -2,15 +2,25 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 50vh;
 
+  .youtube {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
   img {
     width: 200px;
   }
   div {
+  }
+  .hand {
+    position: relative;
+    right: 198px;
+    top: 59px;
   }
   .title {
     width: 150px;

@@ -6,6 +6,10 @@ export const Container = styled.div`
   height: 55px;
   padding: 15px;
   justify-content: space-evenly;
+
+  .atual {
+    filter: brightness(1.5);
+  }
   .gif {
     background-color: white;
   }

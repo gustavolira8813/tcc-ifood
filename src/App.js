@@ -9,6 +9,7 @@ import What from "./pages/what";
 import How from "./pages/how";
 import Help from "./pages/help";
 import Home from "./pages/home";
+import ButtonB from "./components/ButtonB";
 function App() {
   return (
     <div className="Ap">

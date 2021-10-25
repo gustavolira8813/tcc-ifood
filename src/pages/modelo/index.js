@@ -8,7 +8,7 @@ function Modelo() {
   useEffect(() => {
     setTimeout(() => {
       setVisible(false);
-    }, 3000);
+    }, 5000);
   }, []);
   return (
     <>
@@ -21,7 +21,9 @@ function Modelo() {
           neste caso, o parceiro irá "descontratar" o atual Plano Entrega:
         </p>
         <img className="imgModels" src={`${models}`} />
-        <Link to="/practice">Voltar</Link>
+        <Link to="/practice">
+          <button className="btnB">Voltar</button>
+        </Link>
       </div>
     </>
   );

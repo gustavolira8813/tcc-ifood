@@ -1,0 +1,28 @@
+.team li img {
+  border-radius: 5px;
+  width: 150px;
+  height: 250px;
+}
+.team li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 25%;
+  width: 150px;
+  height: 250px;
+}
+.team {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 113vh;
+  align-content: flex-start;
+  align-items: baseline;
+}
+
+.box-group {
+  background: #ffff002e;
+  padding: 20px;
+}

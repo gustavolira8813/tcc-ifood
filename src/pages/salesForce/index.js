@@ -4,12 +4,13 @@ import logo from "../../assets/img/logo1.png";
 import sales1 from "../../assets/img/sales1.png";
 import sales2 from "../../assets/img/sales2.png";
 import "./style.css";
+import ButtonB from "../../components/ButtonB";
 function SalesForce() {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setVisible(false);
-    }, 3000);
+    }, 5000);
   }, []);
   return (
     <>
@@ -30,7 +31,9 @@ function SalesForce() {
           Adquirido.
         </h3>
         <img className="imgSales" src={`${sales2}`} />
-        <Link to="/practice">Voltar</Link>
+        <Link to="/practice">
+          <ButtonB content="Voltar" />
+        </Link>
       </div>
     </>
   );

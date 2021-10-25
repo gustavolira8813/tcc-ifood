@@ -7,6 +7,7 @@ import Help from "../pages/help";
 import What from "../pages/what";
 import Final from "../pages/final";
 import Practice from "../pages/practice";
+import Group from "../pages/group";
 
 function Routes() {
   return (
@@ -16,6 +17,7 @@ function Routes() {
       </Route>
       <Route path="/group">
         <MenuBar />
+        <Group />
       </Route>
       <Route path="/how">
         <MenuBar />

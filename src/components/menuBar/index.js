@@ -1,25 +1,30 @@
 import { Button, ButtonGroup } from "@mui/material";
-import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router";
 import "./styles";
 import { Buttom, Container } from "./styles";
 import logo from "../../assets/img/logoBranco.png";
 import logoGif from "../../assets/img/logoGif.gif";
+import { useState } from "react";
+
 function MenuBar() {
   const history = useHistory();
-
+  const [atual, setAtual] = useState("/group");
   function handleClick(target) {
     history.push(target);
+    setAtual(target);
   }
 
   return (
     <>
       <Container>
-        <img src={`${logo}`} />
+        <img onClick={() => handleClick("/")} src={`${logo}`} />
         <ButtonGroup
+          className="btnGroup"
           variant="contained"
           aria-label="outlined primary button group"
         >
           <Buttom
+            className={atual === "/group" && "atual"}
             variant="contained"
             color="error"
             onClick={() => handleClick("/group")}
@@ -27,6 +32,7 @@ function MenuBar() {
             Grupo
           </Buttom>
           <Button
+            className={atual === "/practice" && "atual"}
             variant="contained"
             color="error"
             onClick={() => handleClick("/practice")}
@@ -34,6 +40,7 @@ function MenuBar() {
             O que é?
           </Button>
           <Button
+            className={atual === "/how" && "atual"}
             variant="contained"
             color="error"
             onClick={() => handleClick("/how")}
@@ -41,6 +48,7 @@ function MenuBar() {
             Como tratar
           </Button>
           <Button
+            className={atual === "/what" && "atual"}
             variant="contained"
             color="error"
             onClick={() => handleClick("/what")}
@@ -48,6 +56,7 @@ function MenuBar() {
             Na prática
           </Button>
           <Button
+            className={atual === "/help" && "atual"}
             variant="contained"
             color="error"
             onClick={() => handleClick("/help")}

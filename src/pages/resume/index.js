@@ -4,12 +4,13 @@ import logo3 from "../../assets/img/logo3.png";
 import resume from "../../assets/img/resume.png";
 import "./style.css";
 import local from "../../assets/img/local.png";
+import ButtonB from "../../components/ButtonB";
 function Resume() {
   const [visible, setVisible] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setVisible(false);
-    }, 3000);
+    }, 5000);
   }, []);
   return (
     <>
@@ -24,7 +25,9 @@ function Resume() {
           cobrada.
         </small>
         <img className="imgLocal" src={`${local}`} />
-        <Link to="/practice">Voltar</Link>
+        <Link to="/practice">
+          <ButtonB content="Voltar" />
+        </Link>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ function Help() {
         <img src={`${logo}`} />
 
         <div>
-          <button className="button2" onClick={() => history.push("/final")}>
+          <button className="btnB" onClick={() => history.push("/final")}>
             Não?
           </button>
         </div>

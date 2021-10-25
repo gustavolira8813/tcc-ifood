@@ -9,7 +9,7 @@ function Conditions() {
   useEffect(() => {
     setTimeout(() => {
       setVisible(false);
-    }, 3000);
+    }, 5000);
   }, []);
   return (
     <>
@@ -27,7 +27,9 @@ function Conditions() {
             <img src={`${plano}`} />
           </div>
         </div>
-        <Link to="/practice">Voltar</Link>
+        <Link to="/practice">
+          <button className="btnB">Voltar</button>
+        </Link>
       </div>
     </>
   );
